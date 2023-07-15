@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <form>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="form-group">
+              <label for="search"></label>
+              <input type="text" name="search" placeholder="請輸入搜尋關鍵字" class="form-control" [(ngModel)]="inputValue">
+              <button class="btn btn-primary" (click)="onSearch()">搜尋</button>
+              <p *ngIf="inputValue">目前字數 {{ inputValue.length}}</p>
+              <p *ngIf="inputValue">目前內容 {{ inputValue}}</p>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

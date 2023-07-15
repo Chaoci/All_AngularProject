@@ -51,7 +51,7 @@ export class AppComponent implements OnInit{
         }else{
           resolve(null);
         }
-      },1500);
+      },1000);
     })
     return promise;
   }
